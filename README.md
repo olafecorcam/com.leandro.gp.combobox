@@ -1,6 +1,6 @@
-com.ipaper.sample.menu
+Combobx
 ==============================
 
-Free as in free beer.
+Use it as you please
 
-mike.howles @ gmail.com if you want to chat about Design Studio SDK goodness.
+olafecorcam @ gmail.com if you need any help.
