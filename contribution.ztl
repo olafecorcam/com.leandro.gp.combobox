@@ -1,0 +1,12 @@
+class com.leandro.gp.combobox.ComboBox extends Component {
+	/**
+	Used to get the Value selected on the component
+	
+	<returns>
+	The Value of selected
+	</returns>
+  	*/
+	String getSelectedValue(){*
+		return this.selectedValue;
+	*}
+}
