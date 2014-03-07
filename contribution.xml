@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sdkExtension xmlns="http://www.sap.com/bi/zen/sdk" id="com.leandro.gp.combobox"
-	title="ComboBox" version="1.0" vendor="Leandro">
+	title="ComboBox" version="2.2" vendor="Leandro">
 	<component id="ComboBox" title="ComboBox" icon="res/icon.png"
 		handlerType="sapui5"
 		propertySheetPath="res/additional_properties_sheet/additional_properties_sheet.html"
-		databound="true">
+		databound="false">
 		<jsInclude>res/js/component.js</jsInclude>
 		<cssInclude>res/css/component.css</cssInclude>
-		<property type="String" group="DataBinding" title="Extra Text"
-			id="textExtra"></property>
-		
+		<property type="String" id="selectedValue"
+			title="Selected Value"
+			visible="false" />
+			<property type="String" id="selectedKey"
+			title="Selected Key"
+			visible="false" />
+		<property type="String" id="items"
+			title="Items"
+			visible="true" />
+
 		<property id="onchange" type="ScriptText" title="On Change"
 			group="Events" />
-			
-		<property type="int" group="DataBinding" title="Item to Show"
-			id="itemToShow">
-			<possibleValue>1</possibleValue>
-			<possibleValue>2</possibleValue>
-			<possibleValue>3</possibleValue>
-			<possibleValue>4</possibleValue>
-			<possibleValue>5</possibleValue>
-			<possibleValue>6</possibleValue>
-			<possibleValue>7</possibleValue>
-			<possibleValue>8</possibleValue>
-			<possibleValue>9</possibleValue>
-		</property>
-
-		<property type="ResultSet" group="DataBinding" title="Data Set"
-			id="dataSet"></property>
 
 		<initialization>
 			<defaultValue property="HEIGHT">25</defaultValue>
 			<defaultValue property="WIDTH">250</defaultValue>
-			<defaultValue property="itemToShow">1</defaultValue>
-			<defaultValue property="textExtra">All</defaultValue>
+			<defaultValue property="items">ALL,ALL;KEY,Value</defaultValue>
 
 
 

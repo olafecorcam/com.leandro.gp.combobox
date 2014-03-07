@@ -9,4 +9,11 @@ class com.leandro.gp.combobox.ComboBox extends Component {
 	String getSelectedValue(){*
 		return this.selectedValue;
 	*}
+	
+	String getSelectedKey(){*
+		return this.selectedKey;
+	*}
+	void setSelectedValue(String value){*
+		this.selectedValue = value;
+	*}
 }
